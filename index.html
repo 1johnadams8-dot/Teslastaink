@@ -1,103 +1,409 @@
-TeslaStaink
-SUSTAINABLE • INNOVATIVE • CONNECTED
-TESLA
-A CLEANER
-BRIGHTER TOMORROW
-Explore Tesla vehicles, Cybertruck and Starlink products through the TeslaStaink independent marketplace.
-Explore Tesla Vehicles → Shop Starlink →
-⚡
-All-Electric
-Zero tailpipe emissions.
-◈
-Modern Technology
-Designed around connected driving.
-◎
-Global Connectivity
-Stay connected with Starlink.
-♧
-Sustainable Future
-Cleaner energy for generations.
-Tesla Vehicles
-Real photographs of Tesla models.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-TESLA
-Model S
-Premium electric sedan focused on performance and range.
-⚡ Long-range performance
-◉ Dual-motor options
-Inquire Now
+<title>Teslastaink | Tesla & Starlink Marketplace</title>
 
-TESLA
-Model 3
-Efficient electric sedan with a clean, minimalist design.
-⚡ Long-range options
-◉ All-wheel-drive options
-Inquire Now
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-TESLA
-Model X
-Spacious electric SUV with distinctive falcon-wing doors.
-⚡ Performance SUV
-◉ Dual-motor options
-Inquire Now
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: #ffffff;
+  color: #172033;
+  line-height: 1.5;
+}
 
-TESLA
-Model Y
-Versatile electric crossover built for everyday life.
-⚡ Long-range options
-◉ All-wheel-drive options
-Inquire Now
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf3;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-CYBERTRUCK
-Cybertruck
-All-electric pickup with a distinctive stainless-steel exterior.
-⚡ Electric pickup
-◉ AWD configurations
-Inquire Now
-Starlink Products
-Real photographs of Starlink hardware and equipment.
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-STARLINK
-Standard Dish
-Starlink user terminal for high-speed satellite internet.
-Inquire Now
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #172033;
+}
 
-STARLINK
-Dish Equipment
-Compact satellite internet hardware for connected locations.
-Inquire Now
+.logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #f4f8ff;
+  border: 2px solid #dce8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2878e8;
+  font-size: 23px;
+}
 
-STARLINK
-Flat Panel
-Flat-panel Starlink hardware photographed in real-world use.
-Inquire Now
+nav a {
+  text-decoration: none;
+  color: #46536a;
+  margin-left: 25px;
+  font-weight: 600;
+}
 
-STARLINK
-Mounting Equipment
-Pole-mounted Starlink equipment for installation setups.
-Inquire Now
+nav a:hover {
+  color: #2878e8;
+}
 
-STARLINK
-Mobile Hardware
-Flat-panel Starlink equipment shown in a mobile setup.
-Inquire Now
-Get in Touch
-Have questions or ready to place an inquiry?
-Phone: +1 469-239-8677   •   Email: spacex.com@gmail.com
-Call or Text Email Us
-TeslaStaink
-Independent Tesla-focused vehicle and Starlink marketplace.
-Quick Links
-Home
-Tesla Vehicles
-Cybertruck
-Starlink
-Support
-Contact
-Shipping Info
-Returns
-FAQ
-Contact
-+1 469-239-8677
-spacex.com@gmail.com
-© 2026 TeslaStaink. All rights reserved. Independent marketplace. Not affiliated with Tesla, Inc. or SpaceX/Starlink.
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 75px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #f2f8ff);
+}
+
+.hero h1 {
+  font-size: clamp(42px, 8vw, 76px);
+  color: #172033;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #2878e8;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  color: #657188;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 6px;
+}
+
+.btn-primary {
+  background: #2878e8;
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #2878e8;
+  border: 2px solid #d9e6f7;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 24px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: #172033;
+}
+
+.section-title p {
+  color: #718096;
+  margin-top: 8px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(25, 55, 95, 0.08);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(25, 55, 95, 0.14);
+}
+
+.product-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  background: #f3f7fb;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #6b778c;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: 800;
+  color: #2878e8;
+  margin-bottom: 15px;
+}
+
+.buy {
+  display: block;
+  text-align: center;
+  background: #2878e8;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.features {
+  background: #f5f9ff;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #e3ebf5;
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.feature h3 {
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: #6c788d;
+}
+
+footer {
+  background: #ffffff;
+  border-top: 1px solid #e7edf4;
+  text-align: center;
+  padding: 30px 20px;
+  color: #718096;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 55px 20px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <div class="logo-icon">⚡</div>
+      Teslastaink
+    </div>
+
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#features">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Drive a <span>Brighter</span> Tomorrow</h1>
+
+  <p>
+    Explore Tesla vehicles, accessories and Starlink products
+    through Teslastaink.
+  </p>
+
+  <div class="buttons">
+    <a class="btn btn-primary" href="#products">Explore Products</a>
+    <a class="btn btn-secondary" href="#contact">Contact Us</a>
+  </div>
+</section>
+
+<section class="section" id="products">
+
+  <div class="section-title">
+    <h2>Featured Products</h2>
+    <p>Explore our latest Tesla and Starlink products.</p>
+  </div>
+
+  <div class="products">
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1617704548623-340376564e68?auto=format&fit=crop&w=900&q=80"
+        alt="Electric vehicle">
+      <div class="card-content">
+        <h3>Electric Vehicle</h3>
+        <p>Modern electric performance with advanced technology.</p>
+        <div class="price">Contact for price</div>
+        <a class="buy" href="#contact">Inquire Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=900&q=80"
+        alt="Electric car">
+      <div class="card-content">
+        <h3>Premium EV</h3>
+        <p>Clean design, powerful performance and smart technology.</p>
+        <div class="price">Contact for price</div>
+        <a class="buy" href="#contact">Inquire Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
+        alt="Satellite technology">
+      <div class="card-content">
+        <h3>Starlink</h3>
+        <p>High-speed satellite connectivity wherever you need it.</p>
+        <div class="price">Contact for price</div>
+        <a class="buy" href="#contact">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1593941707874-ef25b8e6c3c7?auto=format&fit=crop&w=900&q=80"
+        alt="Electric vehicle technology">
+      <div class="card-content">
+        <h3>EV Accessories</h3>
+        <p>Accessories designed for a modern electric lifestyle.</p>
+        <div class="price">Contact for price</div>
+        <a class="buy" href="#contact">View Details</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section features" id="features">
+
+  <div class="section-title">
+    <h2>Why Teslastaink?</h2>
+    <p>Technology, connectivity and a cleaner future.</p>
+  </div>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>All-Electric</h3>
+      <p>Explore the future of electric transportation.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">◇</div>
+      <h3>Modern Technology</h3>
+      <p>Technology designed around connected living.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">◎</div>
+      <h3>Global Connectivity</h3>
+      <p>Stay connected with satellite technology.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">♧</div>
+      <h3>Sustainable Future</h3>
+      <p>Building toward a cleaner and brighter tomorrow.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contact">
+
+  <div class="section-title">
+    <h2>Contact Teslastaink</h2>
+    <p>Interested in a product? Get in touch with us.</p>
+  </div>
+
+  <div style="text-align:center;">
+    <a class="btn btn-primary"
+       href="mailto:contact@teslastaink.com">
+       Email Us
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Teslastaink. All rights reserved.
+</footer>
+
+</body>
+</html>
